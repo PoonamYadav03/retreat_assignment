@@ -2,7 +2,7 @@ from django.db import models
 
 class RetreatDetails(models.Model):
     """ 
-    Retreat model with basic fields and creation timestamp.
+    Retreat model with basic fields and creation.
     """
     title = models.CharField(
         max_length=255,
