@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "a3c84e56-26cb-4fd9-838b-17feb1480053",
+		"name": "Wellnes Retreats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30042500"
+	},
+	"item": [
+		{
+			"name": "Add Retreats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Yoga for Stress Relief\",\r\n    \"description\": \"A weekend retreat focused on yoga and meditation to relieve stress.\",\r\n    \"date\": 1692921600,\r\n    \"location\": \"Goa\",\r\n    \"price\": 200,\r\n    \"retreat_type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://cdn.midjourney.com/a287f9bc-d0fb-4e78-a0fa-e8136d3c408a/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"relaxation\",\r\n      \"meditation\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/v1/retreats/add/"
+			},
+			"response": []
+		},
+		{
+			"name": "Book Retreats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"Yoga for Stress Relief\",\r\n        \"location\": \"Goa\",\r\n        \"price\": \"200.00\",\r\n        \"duration\": 3,\r\n        \"description\": \"A weekend retreat focused on yoga and meditation to relieve stress.\",\r\n        \"created_at\": \"2024-07-25T12:00:00Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/v1/booking/add/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Retreats Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/retreats/get-details/?page=2&item=20&search=Wellness&filter=Mental&location=Pune",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"retreats",
+						"get-details",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "item",
+							"value": "20"
+						},
+						{
+							"key": "search",
+							"value": "Wellness"
+						},
+						{
+							"key": "filter",
+							"value": "Mental"
+						},
+						{
+							"key": "location",
+							"value": "Pune"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
