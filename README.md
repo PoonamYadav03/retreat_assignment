@@ -46,29 +46,20 @@ This command will install all the required packages specified in the requirement
 #### Visit http://localhost:8000 in your web browser to see your Django project running.
 
 # Step 8: Test the API Endpoints using Postman
-    1.Create a Retreat
-    2.Open Postman.
-    3.Create a new request.
-    4.Set the method to POST.
-    5.Set the endpoint URL to /api/retreats/
+### Create a Retreat ###
+### Open Postman.###
+### Create a new request.###
+### Set the method to POST. ###
+### Set the endpoint URL to /api/retreats/ ###
+    1. http://127.0.0.1:8000/api/v1/retreats/add/
 
-# Step 9: Retrieve All Retreats with Search and Filters
-    1.Set the method to GET.
-    2.Set the endpoint URL to /api/retreats/
-
-### Query Parameters: ###
-    1.page: Page number for pagination (default: 1)
-    2.items: Number of items per page (default: 10)
-    3.location: Filter by location (optional)
-    4.search: Search query for filtering retreats (optional)
-    5.filter: Additional filter query (optional)
-    6.Send the request and verify the response.
+# Step 9: Retrieve All Retreats with Single Search and Single Filters
+### Set the method to GET. ###
+### Set the endpoint URL to /api/retreats/ ###
+    1.http://127.0.0.1:8000/api/v1/retreats/get-details/?page=1&item=20&search=Wellness&filter=Mental&location=Pune
 
 # Step 10: Create a Booking
-    1.Set the method to POST.
-    2.Set the endpoint URL to /api/bookings/
+### set the method to POST. ###
+### Set the endpoint URL to /api/bookings/ ###
+    1.http://127.0.0.1:8000/api/v1/booking/add/
 
-# Step 11: Retrieve All Bookings
-    1.Set the method to GET.
-    2.Set the endpoint URL to /api/bookings/.
-    3.Send the request and verify the response.
