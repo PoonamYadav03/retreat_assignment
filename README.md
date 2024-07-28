@@ -52,8 +52,13 @@ This command will install all the required packages specified in the requirement
 
 # Step 9: Retrieve All Retreats with Single Search and Single Filters
 ### Set the method to GET. ###
+### If all Parameter passed it will retrive Matching data. ###
     1.http://127.0.0.1:8000/api/v1/retreats/get-details/?page=1&item=20&search=Wellness&filter=Mental&location=Pune
-
+### If no Parameter Pass it will retrive All. ###
+    2.http://127.0.0.1:8000/api/v1/retreats/get-details/
+### If filter applied it will retrive filter data. ###
+    3.http://127.0.0.1:8000/api/v1/retreats/get-details/?page=1&location=Pune
+    
 # Step 10: Create a Booking
 ### set the method to POST. ###
 
