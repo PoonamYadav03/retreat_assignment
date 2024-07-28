@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a3c84e56-26cb-4fd9-838b-17feb1480053",
+		"_postman_id": "cf369d2d-d98f-4d72-ad1f-51654eea3ffb",
 		"name": "Wellnes Retreats",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "30042500"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35171245"
 	},
 	"item": [
 		{
@@ -13,14 +13,31 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Yoga for Stress Relief\",\r\n    \"description\": \"A weekend retreat focused on yoga and meditation to relieve stress.\",\r\n    \"date\": 1692921600,\r\n    \"location\": \"Goa\",\r\n    \"price\": 200,\r\n    \"retreat_type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://cdn.midjourney.com/a287f9bc-d0fb-4e78-a0fa-e8136d3c408a/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"relaxation\",\r\n      \"meditation\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 3\r\n    }",
+					"raw": "  {\r\n    \"id\": \"11\",\r\n    \"title\": \"Yoga Event 11\",\r\n    \"description\": \"A description for Yoga Event 11.\",\r\n    \"date\": 1723566880,\r\n    \"location\": \"Pune\",\r\n    \"price\": 704,\r\n    \"retreat_type\": \"Signature\",\r\n\r\n    \"condition\": \"Chronic Pain Management\",\r\n    \"image\": \"https://cdn.midjourney.com/ec4680e8-d074-4a69-a24b-3d3f3946907b/0_2.jpeg\",\r\n    \"tag\": [\r\n      \"yoga\",\r\n      \"camp\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 10\r\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{url}}/api/v1/retreats/add/"
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/retreats/add/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"retreats",
+						"add",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -31,14 +48,31 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n        \"title\": \"Yoga for Stress Relief\",\r\n        \"location\": \"Goa\",\r\n        \"price\": \"200.00\",\r\n        \"duration\": 3,\r\n        \"description\": \"A weekend retreat focused on yoga and meditation to relieve stress.\",\r\n        \"created_at\": \"2024-07-25T12:00:00Z\"\r\n    }",
+					"raw": "    {\r\n        \"user_id\": 1,\r\n        \"user_name\": \"Poonam Yadav\",\r\n        \"user_email\": \"poonamyadav@gmail.com\",\r\n        \"user_phone\": 7498874300,\r\n        \"retreat\": 1,\r\n        \"payment_details\": {\r\n            \"payment_id\":1,\r\n            \"transaction\":\"abbbbbbbbbbbbbbbbb\"\r\n        },\r\n        \"booking_date\":\"2024-07-26\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{url}}/api/v1/booking/add/"
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/booking/add/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"add",
+						""
+					]
+				}
 			},
 			"response": []
 		},

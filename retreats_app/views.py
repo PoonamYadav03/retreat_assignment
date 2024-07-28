@@ -6,6 +6,7 @@ from .utils.serializers_errors import serializer_error
 from .utils.pagination_utility import pagination_utility
 from django.db.models import Q
 
+# Creating API View set
 class RetreatViewSet(viewsets.ViewSet):
    
     def create_retreat(self, request):
@@ -152,9 +153,11 @@ class RetreatViewSet(viewsets.ViewSet):
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
 
-
+# Creating Booking View Set 
 class BookingViewSet(viewsets.ViewSet):
-    
+    """
+    Creates a new booking entry using data provided in the request.
+    """
     def create_booking(self, request):
         try:
 

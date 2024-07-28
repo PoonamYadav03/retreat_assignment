@@ -44,3 +44,31 @@ This command will install all the required packages specified in the requirement
     1.python manage.py runserver
 
 #### Visit http://localhost:8000 in your web browser to see your Django project running.
+
+# Step 8: Test the API Endpoints using Postman
+    1.Create a Retreat
+    2.Open Postman.
+    3.Create a new request.
+    4.Set the method to POST.
+    5.Set the endpoint URL to /api/retreats/
+
+# Step 9: Retrieve All Retreats with Search and Filters
+    1.Set the method to GET.
+    2.Set the endpoint URL to /api/retreats/
+
+### Query Parameters: ###
+    1.page: Page number for pagination (default: 1)
+    2.items: Number of items per page (default: 10)
+    3.location: Filter by location (optional)
+    4.search: Search query for filtering retreats (optional)
+    5.filter: Additional filter query (optional)
+    6.Send the request and verify the response.
+
+# Step 10: Create a Booking
+    1.Set the method to POST.
+    2.Set the endpoint URL to /api/bookings/
+
+# Step 11: Retrieve All Bookings
+    1.Set the method to GET.
+    2.Set the endpoint URL to /api/bookings/.
+    3.Send the request and verify the response.
